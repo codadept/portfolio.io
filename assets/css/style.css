@@ -8,7 +8,7 @@
 
 html{
 	font: normal 16px sans-serif;
-	color: #555;
+	color: #2b2b2b;
 }
 
 nav{
@@ -18,21 +18,41 @@ nav{
 a{
 	text-decoration: none;
 	opacity: 0.75;
+	color: #fff;
 }
 
 a:hover{
 	opacity: 1;
 }
 
+a.btn{
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	background-color: #d4709d;
+	opacity: 1;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 80px;
+}
+
 /*Header styles*/
 
 header{
+	position: absolute;
+	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding: 35px 100px;
 	animation: 1s fadein 0.5s forwards;
 	opacity: 0;
+	color: #fff;
 }
 
 @keyframes fadein{
@@ -55,13 +75,53 @@ header nav li{
 }
 
 
+/*Hero Styles*/
 
+.hero{
+	position: relative;
+	justify-content: center;;
+	text-align: center;
+	min-height: 100vh; 
+	color: #fff;
+}
 
+.hero .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;  	/* This makes sure image is behind other items */
+	background-color: #58becc; 
+}
 
+.hero h1{
+	font: bold 60px "Open Sans", sans-serif;
+	margin-bottom: 15px;
+}
 
+.hero h3{
+	font: normal 28px "Open Sans", sans-serif;
+	margin-bottom: 40px; 
+}
 
+.hero a.btn{
+	padding: 20px 46px;
+}
 
+.hero-content-area{
+	opacity: 0;
+	margin-top: 100px;
+	animation: 1s slidefade 1s forwards;
+}
 
+@keyframes slidefade{
+	100%{
+		opacity: 1;
+		margin-top: 0;
+	}
+}
 
 
 
