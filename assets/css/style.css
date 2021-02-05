@@ -129,6 +129,28 @@ header nav li{
 	}
 }
 
+/* Scroll to top button */
+
+#btnScrollToTop{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #e62739;
+	box-shadow: 0 0 10px rgba(0,0,0,0.25);
+	outline: none;
+	color: #ffffff;
+	cursor: pointer;
+	border: none;
+}
+
+#btnScrollToTop:active{
+	background: #cc2333;
+}
+
+
 /*Hero Styles*/
 
 .hero{
@@ -153,8 +175,8 @@ header nav li{
 
 .hero .hero-image{
 	top: 0;
-	width: 12rem;
-	height: 12rem;
+	width: 10rem;
+	height: 10rem;
 	background-size: 100%;
 }
 
@@ -162,7 +184,7 @@ header nav li{
 	position: absolute;
 	bottom: 0;
 	width: 80%;
-	height: 25%;
+	height: 20%;
 	background-size: 100%;
 }
 
@@ -207,9 +229,23 @@ header nav li{
 	margin-bottom: 40px; 
 }
 
-/* .hero a.btn{
+.hero a.btn{
+	position: relative;
 	padding: 20px 46px;
-} */
+	letter-spacing: 2px;
+	border-radius: 14px ;
+	box-shadow: 0 6px #792c4f;
+}
+
+.hero a.btn:hover{
+	box-shadow: 0 4px #792c4f;
+	top: 2px;
+}
+
+.hero a.btn:active{
+	box-shadow: none;
+	top: 4px;
+}
 
 .hero-content-area{
 	opacity: 0;
@@ -273,9 +309,9 @@ header nav li{
 	}
 }
 
-/*Destinations Section*/
+/*projects Section*/
 
-.destinations .grid li{
+.projects .grid li{
 	height: 350px;
 	padding: 20px;
 	background-clip: content-box;
@@ -283,24 +319,24 @@ header nav li{
 	background-position: center;
 }
 
-.destinations .grid li.small{
+.projects .grid li.small{
 	flex-basis: 30%;
 }
 
-.destinations .grid li.large{
+.projects .grid li.large{
 	flex-basis: 70%;
 }
 
 @media (max-width: 1100px){
-	.destinations .grid li.small,
-	.destinations .grid li.large{
+	.projects .grid li.small,
+	.projects .grid li.large{
 		flex-basis: 50%;
 	}
 }
 
 @media (max-width: 800px){
-	.destinations .grid li.small,
-	.destinations .grid li.large{
+	.projects .grid li.small,
+	.projects .grid li.large{
 		flex-basis: 100%;
 	}
 }
