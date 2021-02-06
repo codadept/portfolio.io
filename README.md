@@ -8,21 +8,21 @@ First version of my personal website built with simple front-end languages.
 
 ## Directory Tree
 
->  assets
->    >  css
->        >  style.css
->    >  img
->        >  icon-one-icon.png
->        >  image-2.jpeg
->        >  image-3.jpeg
->        >  image-4.jpeg
->        >  image-5.jpeg
->        >  image-6.jpg
->        >  logo2.png
->        >  Photo.png
->    >  js
->        >  script.js
->  index.html
->  README.md
+assets\
+    css\
+        style.css\
+    img\
+        icon-one-icon.png\
+        image-2.jpeg\
+        image-3.jpeg\
+        image-4.jpeg\
+        image-5.jpeg\
+        image-6.jpg\
+        logo2.png\
+        Photo.png\
+    js\
+        script.js\
+index.html\
+README.md\
 
 ## Visit the [website](https://codadept.github.io/portfolio/)
